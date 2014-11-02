@@ -278,7 +278,7 @@ blockquote:after { font-family: "line-icons";  position: absolute; color: #1ac6f
 #hero .btn-primary:hover, #hero .btn-primary.hovered { background: rgba(26, 198, 255,0.9);  border:1px solid #1ac6ff;}
 #hero .list-inline { margin:0; }
 .static-header { background: url('../img/background/bg1.jpg') no-repeat center center; -webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover !important; height: 100vh; position: relative; }
-.text-heading { position: relative; width: 100%; left: 0; right: 0; text-align: center; padding-top: 250px; 
+.text-heading { position: relative; width: 100%; left: 0; right: 0; text-align: left; padding-top: 250px; padding-left: 10%;
 }
 .text-heading p { font-size: 23px; font-weight: 300; }
 .static-header h4 { text-align: center; display: block; position: absolute; bottom: 20px; left: 0; right: 0; width: 100%; margin-bottom: 0; }
@@ -784,6 +784,17 @@ input[type=file]:focus, input[type=radio]:focus, input[type=checkbox]:focus { ou
 }
 
 /* Tablet device Landscape 1024px and 768px */
+@media (max-width: 1024px) {
+    .text-heading {
+        text-align: center;
+        padding-left: 0px;
+    }
+    .sub-headline {
+        padding-left: 0px !important;
+    }
+    
+}
+
 @media (max-width: 1024px) and (min-width: 768px) {
 	p { font-size:14px; line-height:25px; }
     .navigation-header .navigation-brand { margin-right: 0; width: 100%; float: none; margin-bottom: -10px; margin-top:0;}
@@ -794,8 +805,7 @@ input[type=file]:focus, input[type=radio]:focus, input[type=checkbox]:focus { ou
     #landing-page .plain-version.static-header { min-height: 460px; }
 	#color-landing-page .static-header { min-height: 770px; }
 	.video-version .text-heading { padding-top: 20%; }
-	.text-heading { padding-top: 35vh; }
-	
+	.text-heading { padding-top: 35vh;}
     .wrapper { width: 90%; }
 	.static-header, #newsletter, #feedback, .footer { background-size: auto !important; background-size: auto !important; background-position: top center; background-attachment: scroll !important;}
     .list-inline img { max-width: 90%; }
@@ -979,4 +989,6 @@ input[type=file]:focus, input[type=radio]:focus, input[type=checkbox]:focus { ou
 }
 
     #mobile { background: #f0f0f0; padding: 0px 0px 30px 0px; min-height: 550px;}
+.sub-headline {
+    padding-left: 16%;
 }
