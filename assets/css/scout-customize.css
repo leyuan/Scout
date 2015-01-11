@@ -1,0 +1,62 @@
+.home-btn-div {
+	margin-top: 6%;
+}
+
+.home-btn {
+	margin-left: 10px;
+	margin-right: 10px;
+	padding: 15px;
+	width: 150px;
+	height: 50px;
+	color: white;
+	/*font-size: 20px;*/
+	font-weight: 300;
+	background-color: transparent;
+	border: 1px solid;
+	border-color: white;
+	border-radius: 4px;
+}
+
+.home-btn:hover {
+	color: #1ac6ff;
+	border-color: #1ac6ff;
+}
+
+#Container .mix {
+	display: none;
+}
+
+.amp {
+	font-family: Baskerville, 'Goudy Old Style', Palatino, 'Book Antiqua', serif;
+	font-style: italic;
+	font-weight: normal;
+}
+
+.business-logo {
+	padding-left: 10px;
+	padding-right: 10px;
+	color: #777;
+}
+
+.business-logo-img {
+	width: 92%;
+}
+
+.business-logo-all {
+	font-size: 21px;
+}
+
+/*.business-list-logos .active {
+	text-decoration: underline;
+}*/
+
+.filter {
+	cursor: pointer;
+}
+
+.logo-cat-selected {
+	padding-top: 10px;
+	padding-bottom: 5px;
+	border-bottom: 1px solid #1ac6ff;
+	color: #1ac6ff;
+}
