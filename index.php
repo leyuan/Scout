@@ -36,16 +36,6 @@
 
         <div id="overlay">          
         </div>
-        <!-- Get Card -->
-        <div class="pop-ups" id="get-card-popup">
-            <div class="pop-up-controls">
-                <span class="get-card-close-btn"> X </span>
-            </div>
-
-            <div class="pop-up-content">
-                <h1>Buy card Popup Content</h1>
-            </div>
-        </div>
         <!-- Ehub Popup -->
         <div class="pop-ups" id="ehub-popup">
             <div class="pop-up-controls">
@@ -54,6 +44,9 @@
 
             <div class="pop-up-content">
                 <h1>Ehub Popup Content</h1>
+                <p>
+                    
+                </p>
             </div>
         </div>
         <!-- Buster Pizza -->
@@ -66,36 +59,38 @@
                 <div class="popup-logo text-center">
                     <img src="assets/img/logos/logo-4-hover.png" class="popup-logo-img" />
                 </div>
-                <div class="popup-title text-center">
-                    <h3> Buster's Pizza Donair & Pasta </h3>
-                </div>
-                <div class="popup-socialmedia text-center">
-                    <span> <img src="assets/img/logos/fb.png" class="popup-social-img" /> </span>
-                    <span> <img src="assets/img/logos/tw.png" class="popup-social-img" /> </span>
-                    <span> <img src="assets/img/logos/web.png" class="popup-social-img" /> </span>
-                </div>
-                <div class="popup-description">
-                    <p>
-                        Buster's Pizza brings you a unique and fresh food experience that takes you to the edge of the Mediterranean
-                    </p>
-                </div>
-                <div class="popup-location">
-                    <h5> Locations: </h5>
-                    <div class="popup-location-list">
-                        <ul>
-                            <li>
-                                LONDONDERRY MALL (EXPRESS) 780-406-7667 <br />
-                                137 Ave and 66 St
-                            </li>
-                            <li>
-                                NORTH WEST EDMONTON 780-457-0025 <br />
-                                12716 - 137 Avenue
-                            </li>
-                            <li>
-                                WEST EDMONTON 780-457-1332 <br />
-                                17288 - Stony Plain Road
-                            </li>
-                        </ul>
+                <div class="popup-content">
+                    <div class="popup-title text-center">
+                        <h3> Buster's Pizza Donair & Pasta </h3>
+                    </div>
+                    <div class="popup-socialmedia text-center">
+                        <span> <img src="assets/img/logos/fb.png" class="popup-social-img" /> </span>
+                        <span> <img src="assets/img/logos/tw.png" class="popup-social-img" /> </span>
+                        <span> <img src="assets/img/logos/web.png" class="popup-social-img" /> </span>
+                    </div>
+                    <div class="popup-description">
+                        <p>
+                            Buster's Pizza brings you a unique and fresh food experience that takes you to the edge of the Mediterranean
+                        </p>
+                    </div>
+                    <div class="popup-location">
+                        <h5> Locations: </h5>
+                        <div class="popup-location-list">
+                            <ul>
+                                <li>
+                                    LONDONDERRY MALL (EXPRESS) 780-406-7667 <br />
+                                    137 Ave and 66 St
+                                </li>
+                                <li>
+                                    NORTH WEST EDMONTON 780-457-0025 <br />
+                                    12716 - 137 Avenue
+                                </li>
+                                <li>
+                                    WEST EDMONTON 780-457-1332 <br />
+                                    17288 - Stony Plain Road
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
                 <div class="popup-footer text-center">
@@ -146,12 +141,12 @@
         <div id="clients">
             <div class="container">
                 <ul class="list-inline logos">
-                    <li class="logo-img-container"><img class="animated hiding logo-img support-1" id="ehub-logo-img" data-animation="fadeInUp" data-delay="0" src="assets/img/logos/logo-1.png" data-alt-src="assets/img/logos/logo-1-hover.png" alt="ehub" /></li>
-                    <li class="logo-img-container"><img class="animated hiding logo-img support-2" data-animation="fadeInUp" data-delay="200" src="assets/img/logos/logo-2.png" data-alt-src="assets/img/logos/logo-2-hover.png" alt="LBWTravel" /></li>
-                    <li class="logo-img-container"><img class="animated hiding logo-img support-3" data-animation="fadeInUp" data-delay="400" src="assets/img/logos/logo-3.png" data-alt-src="assets/img/logos/logo-3-hover.png" alt="Hot-107" /></li>
-                    <li class="logo-img-container"><img class="animated hiding logo-img support-4" id="buster-pizza-img" data-animation="fadeInUp" data-delay="600" src="assets/img/logos/logo-4.png" data-alt-src="assets/img/logos/logo-4-hover.png" alt="Buster's Pizza" /></li>
-                    <li class="logo-img-container"><img class="animated hiding logo-img support-5" data-animation="fadeInUp" data-delay="800" src="assets/img/logos/logo-5.png" data-alt-src="assets/img/logos/logo-5-hover.png" alt="Yelp" /></li>
-                    <li class="logo-img-container"><img class="animated hiding logo-img support-6" data-animation="fadeInUp" data-delay="1000" src="assets/img/logos/logo-6.png" data-alt-src="assets/img/logos/logo-6-hover.png" alt="Startup-Edmonton" /></li>
+                    <li class="logo-img-container"><img class="animated hiding logo-img support-1" id="ehub-logo-img" data-animation="fadeInUp" data-delay="0" src="assets/img/logos/ehub1.png" data-alt-src="assets/img/logos/ehub2.png" alt="ehub" /></li>
+                    <li class="logo-img-container"><img class="animated hiding logo-img support-2" data-animation="fadeInUp" data-delay="200" src="assets/img/logos/lbw1.png" data-alt-src="assets/img/logos/lbw2.png" alt="LBWTravel" /></li>
+                    <li class="logo-img-container"><img class="animated hiding logo-img support-3" data-animation="fadeInUp" data-delay="400" src="assets/img/logos/hot1071.png" data-alt-src="assets/img/logos/hot1072.png" alt="Hot-107" /></li>
+                    <li class="logo-img-container"><img class="animated hiding logo-img support-4" id="buster-pizza-img" data-animation="fadeInUp" data-delay="600" src="assets/img/logos/busters1.png" data-alt-src="assets/img/logos/busters2.png" alt="Buster's Pizza" /></li>
+                    <li class="logo-img-container"><img class="animated hiding logo-img support-5" data-animation="fadeInUp" data-delay="800" src="assets/img/logos/yelp1.png" data-alt-src="assets/img/logos/yelp2.png" alt="Yelp" /></li>
+                    <li class="logo-img-container"><img class="animated hiding logo-img support-6" data-animation="fadeInUp" data-delay="1000" src="assets/img/logos/startup1.png" data-alt-src="assets/img/logos/startup2.png" alt="Startup-Edmonton" /></li>
                 </ul>
             </div>
         </div>
@@ -317,6 +312,42 @@
     		</div>
     	</section>
 
+        <section id="your-feedback" class="">
+            <div class="section-header animated hiding text-left col-md-10 col-md-offset-1 your-feedback-container" data-animation="fadeInDown">
+                <h2 class="text-center">_your <span class="highlight">feedback</span></h2>
+                <div class="col-md-10 col-md-offset-1">
+                    <form action="" >
+                        <p style="overflow: hidden;">
+                            <input type="text" name="fb-name" class="fb-text col-md-5" placeholder="Your name" />
+                            <input type="text" name="fb-contact" class="fb-text col-md-5 col-md-offset-1" placeholder="Email or Phone" />
+                        </p>
+                        <p style="overflow: hidden;">
+                            I need to be contacted.
+                        </p>
+
+                        <h5><u>Did something go wrong?</u></h5>
+                        <p>Let us know so we can work to fix it</p>
+                        <textarea name="feedback-textarea-one" class="fb-textarea" placeholder="Describe problem"></textarea> <br />
+                        <br />
+                        <p style="overflow: hidden;">
+                            <input type="text" name="fb-date" class="fb-text col-md-5" placeholder="Date (MM-DD-YYYY)" />
+                            <input type="text" name="Location" class="fb-text col-md-5 col-md-offset-1" placeholder="Location (if applicable)" />
+                        </p>
+
+                        <hr />
+
+                        <h5><u>Did something go right?</u></h5>
+                        <p>Is there a business you would like to see next year?</p>
+                        <textarea name="feedback-textarea-two" class="fb-textarea" placeholder="Your feedback is important to us!"></textarea>
+                        <br />
+                        <br />
+                        <button id="fb-submit-btn" class="btn btn-lg btn-primary"> Submit </button>
+                    </form>
+                </div>
+            </div>
+            
+        </section>
+
     	<section id="businesses" class="section dark" style="background-color: #f0f0f0; padding-top:30px !important; padding-bottom: 60px !important;">
             <div class="container animated hiding" data-animation="fadeInDown">
                 <span class="business-title"><h3> Our Partners </h3></span>
@@ -401,6 +432,41 @@
                     </div>
                     <div id="get-card-offline">
                         <h2>_Offline</h2>
+
+                        <div class="offline-text-container">
+                            <h4><u>Universitites / Colleges</u></h4>
+                            <h5>MacEwan University </h5>
+                            <p>
+                                SAM Center and SAMU Offices
+                            </p>
+
+                            <h4><u>Businesses</u></h4>
+                            <h5>University of Alberta Area</h5>
+                            <p>
+                                Beez: Hub Mall <br />
+                                The Green House Salad: 8623 112 St NW, Edmonton, AB <br />
+                                T6G 2H1. Behind Good Earth
+                            </p>
+
+                            <h5>Downtown</h5>
+                            <p>
+                                Dragon FX: Kingsway Mall <br />
+                                The Green House Salad: 10119 101 St NW, Edmonton, AB <br />
+                                T5J 1V9
+                            </p>
+
+                            <h5>West Side</h5>
+                            <p>
+                                Dragon FX: West Edmonton Mall
+                            </p>
+
+                            <h5>South Side</h5>
+                            <p>
+                                Dragon FX: Millwoods Town Center <br />
+                                Table Top Cafe: 5716 75 St NW, Edmonton, AB <br />
+                                T6E 5X6
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -417,6 +483,7 @@
                         Scout is a marketing platform designed to help businesses acquire new customers and engage their existing customers.
                         </p>
                         <p><strong>Shop Local. Get Rewarded.</strong></p>
+                        <p><a href="terms-of-use.html" id="tof-link"> Terms of Use </a></p>
                     </div>
                     <div class="col-sm-5 social-wrap">
                         <div class="footer-title">Social Networks</div>
