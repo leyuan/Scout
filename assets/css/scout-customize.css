@@ -93,12 +93,16 @@
 .pop-ups {
 	position: fixed;
 	margin: auto;
+	padding-bottom: 40px;
 	background: #fff;
 	top: 10%;
-	left: 10%;
-	width: 80%;
-	height: 80%;
+	left: 15%;
+	width: 70%;
+	max-height: 80%;
 	overflow-y: scroll;
+	border: 2px;
+	border-style: solid;
+	border-color: #1ac6ff;
 	z-index: 200;
 }
 
@@ -113,19 +117,15 @@
     z-index: 200;
 }
 
-.get-card-close-btn {
+.bp-popup-content {
+	height: 70vh;
+	overflow-y: scroll;
+}
+
+.pop-up-close-btn {
 	float: right;
 	padding: 10px;
 	cursor: pointer;
-}
-
-.popup-logo, .popup-title, .popup-socialmedia, .popup-description, .popup-footer {
-	height: 10vh;
-	vertical-align: middle;
-}
-
-.popup-location {
-	height: 30vh;
 }
 
 .popup-logo-img {
@@ -135,10 +135,6 @@
 .popup-title > h3 {
 	font-weight: 700;
 	color: #1ac6ff;
-}
-
-.popup-logo, .popup-title, .popup-socialmedia, .popup-description, .popup-footer {
-	/*height: 100px;*/
 }
 
 .popup-description > p {
@@ -151,31 +147,37 @@
 	padding-right: 40px;
 }
 
-.popup-location-list {
-	position: absolute;
-	overflow-y: scroll;
-	max-height: 25%;
-	max-width: 80%;
-}
-
 .popup-location > h5 {
 	color: #1ac6ff;
 }
 
-.popup-footer {
-	position: fixed;
-	left: 15%;
-	right: 15%;
-	bottom: 16%;
+.bp-popup-footer > h4 {
+	color: #1ac6ff;
 }
 
-.popup-footer > h4 {
-	color: #1ac6ff;
+/** Css for normal pop-up*/
+
+.pop-up-content > div {
+	margin-top: 20px;
+	margin-bottom: 20px;
 }
 
 .popup-social-img {
 	width: 80px;
 	padding: 13px;
+}
+
+.pop-up-logo {
+	overflow: hidden;
+	width: 100%;
+	text-align: center;
+}
+
+.pop-up-description > p{
+	overflow: hidden;
+	width: 80%;
+	margin-left: auto;
+	margin-right: auto;
 }
 
 /* css for get-card */
@@ -280,6 +282,10 @@
 #tof-link:hover {
 	color: white;
 
+}
+
+#fb-response > p {
+	color: rgb(0, 129, 255);
 }
 
 
