@@ -117,11 +117,6 @@
     z-index: 200;
 }
 
-.bp-popup-content {
-	height: 70vh;
-	overflow-y: scroll;
-}
-
 .pop-up-close-btn {
 	float: right;
 	padding: 10px;
