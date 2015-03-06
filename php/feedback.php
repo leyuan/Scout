@@ -11,13 +11,14 @@ include_once('db_conn.php');
 
 $user_name = $_POST['fb_name'];
 $user_contact = $_POST['fb_contact'];
+$user_phone = $_POST['fb_phone'];
 $wrong = $_POST['fb_textarea_one'];
 $date = null;
 $location = null;
 $right = $_POST['fb_textarea_two'];
 
-$message = "There was some feedback submitted on the website!.\n".$user_name."\n".$user_contact."\n".$wrong."\n".$right;
-mail("iabarreto11@gmail.com", "New feedback submitted on website!", $message);
+//$message = "There was some feedback submitted on the website!.\n".$user_name."\n".$user_contact."\n".$wrong."\n".$right;
+//mail("iabarreto11@gmail.com", "New feedback submitted on website!", $message);
 
 $query = "INSERT INTO Feedback(Name, Contact, Date, Location, Going_Wrong, Going_Right) 
 	Values ('".$user_name."','".$user_contact."','".$date."','".$location."','".$wrong."','".$right."') ";
