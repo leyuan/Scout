@@ -272,8 +272,6 @@
             <a class="filter business-logo" data-filter=".Beauty_Spas"> Beauty <span class="amp">&amp;</span> Spas </a>
             <a class="filter business-logo" data-filter=".Entertainment"> Entertainment </a>
 
-
-
             <div id="Container">
                 <?php
                 /**
@@ -293,9 +291,10 @@
                         $pattern = '/\\.DS/';
                         preg_match( $pattern, $subject, $match );
                         if( !$match ) {
+                            $file_path_name = str_replace("\\", "/", $subject);
                             ?>
                             <div class="mix <?php echo $it->getSubPath(); ?> col-md-3 ">
-                                <img src=" <?php echo $businesses_logo_dir.$it->getSubPathName(); ?> " alt=" <?php echo $it->getSubPathName(); ?>" class="business-logo-img"/>
+                                <img src="<?php echo $businesses_logo_dir.$file_path_name;?>" alt="<?php echo $file_path_name;?>" class="business-logo-img"/>
                             </div>
 
                         <?php
@@ -381,11 +380,6 @@
 
 <script type="text/javascript">
     $(document).ready(function(){
-
-        var total_cents = 500;
-        var total_dollars = 5;
-        var quantity = 1;
-
         $(".business-logo").click( function(){
 
             $(".business-list-logos > .logo-cat-selected").removeClass('logo-cat-selected');
@@ -477,90 +471,6 @@
                 new Image().src = $(this).data('alt-src');
             }).hover(sourceSwap, sourceSwap);
         });
-
-        $("#quantity-select").change(function(){
-            quantity = $("#quantity-select").val();
-            total_dollars = quantity * 5;
-            total_cents = total_dollars * 100;
-            $("#card-quantity").html(quantity);
-            $("#card-total").html(total_dollars);
-
-        });
-
-        $("#fb-submit-btn").click(function(event){
-            event.preventDefault();
-            var data = $("#fb-form").serialize();
-
-            $.ajax({
-                type: "POST",
-                cache: false,
-                url: "php/feedback.php",
-                data: data,
-                beforeSend: function(XMLHttpRequest, textStatus) {
-                    message = "<p>Sending ...</p>";
-
-                },
-                error: function(XMLHttpRequest, textStatus, errorThrown) {
-                    $("#fb-response").html("<p> Something is going wrong, please email us your feedback </p>");
-                },
-                success: function(response) {
-                    $("#fb-response").html(response);
-                }
-            });
-
-        });
-
-        $('#get-card-checkout-btn').click(function(){
-            var token = function(res){
-                console.log(res);
-                var $input = $('<input type=hidden name=stripeToken />').val(res.id);
-                $("#customer-email").val(res.email);
-                $("#total-dollars").val(total_dollars);
-                console.log(res.email);
-                console.log(res.card.address_city);
-                $.ajax
-                (
-                    {
-                        type:"POST",
-                        cache: false,
-                        url: "php/charge.php",
-                        data: {stripeToken: res.id, total_dollars: total_dollars, name: res.card.name, email: res.email, address: res.card.address_line1, zip: res.card.address_zip },
-                        beforeSend:
-                            function(XMLHttpRequest, textStatus)
-                            {
-                                response = "<p>Processing...</p>";
-                                $("#get-card-response").html(response);
-                            },
-                        error:
-                            function(XMLHttpRequest, textStatus, errorThrown)
-                            {
-                                // response = "<p>Something is going wrong, please notify us.</p>";
-                                response = errorThrown;
-                                $("#get-card-response").html(response);
-                            },
-                        success:
-                            function(response)
-                            {
-                                $("#get-card-response").html(response);
-                            }
-                    }
-                );/* $.ajax */
-            };
-
-            StripeCheckout.open({
-                key:         'pk_live_WKvcF0LgKCPDmWHBFCzrOOo4',
-                address:     true,
-                amount:      total_cents,
-                currency:    'cad',
-                name:        'Scount Student Card',
-                description: quantity + " card(s), thank you.",
-                panelLabel:  'Checkout',
-                token:       token
-            });
-
-            return false;
-        });
-
     });
 </script>
 </body>

@@ -197,7 +197,8 @@
                     fb_contact: {
                         required: true,
                         email: true
-                    }
+                    },
+                    fb_phone: "required"
                 }
             });
 
@@ -222,6 +223,9 @@
                             $("#fb-response").html(response);
                         }
                     });
+                }
+                else {
+                    event.preventDefault();
                 }
             });
         });
