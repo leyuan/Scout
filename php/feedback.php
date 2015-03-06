@@ -17,7 +17,7 @@ $location = $_POST['fb_location'];
 $right = $_POST['fb_textarea_two'];
 
 $query = "INSERT INTO Feedback(Name, Contact, Date, Location, Going_Wrong, Going_Right) 
-	Values ('".$user_name."','".$user_contact."','".$wrong."','".$date."','".$location."','".$right."') ";
+	Values ('".$user_name."','".$user_contact."','".$date."','".$location."','".$wrong."','".$right."') ";
 $result = mysql_query($query);
 
 if($result) {

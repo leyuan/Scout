@@ -2,8 +2,8 @@
 require_once('./lib/Stripe.php');
 
 $stripe = array(
-  "secret_key"      => "sk_test_1grnuW58X4lbvciRRSBWcfPK",
-  "publishable_key" => "pk_test_WrsERm79wYCRYqd8sPGc4Wei"
+  "secret_key"      => "sk_live_5EAH7LO8CggozO3vjDln2mkt",
+  "publishable_key" => "pk_live_WKvcF0LgKCPDmWHBFCzrOOo4"
 );
 
 Stripe::setApiKey($stripe['secret_key']);

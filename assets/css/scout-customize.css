@@ -288,6 +288,10 @@
 	color: rgb(0, 129, 255);
 }
 
+.static-header.contact-header {
+    /*background: url('../img/background/contact_bg.jpg') no-repeat center center;*/
+    /*height: 300px;*/
+}
 
 
 

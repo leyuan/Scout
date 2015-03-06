@@ -220,7 +220,7 @@
                 <div class="container">
                     <div class="navigation-brand">
                         <div class="brand-logo">
-    						<a href="index.html" class="logo"></a>
+    						<a href="/" class="logo"></a>
                         </div>
                         <button class="navigation-toggle visible-xs" type="button" data-toggle="dropdown" data-target=".navigation-navbar">
                           <span class="icon-bar"></span>
@@ -233,10 +233,8 @@
                             <li class="active"><a href="#hero">Home</a></li>
                             <li><a href="#whyus">Why US</a></li>
                             <li><a href="#mobile">Mobile</a></li>
-                            <li><a href="#feedback">Feedback</a></li>
-                            <li><a href="#businesses">Businesses</a></li>
-                            <li><a href="#get-card">Get Card</a>
-                            <li><a href="#contact">Contact</a></li>
+                            <li><a href="#feedback">Testimonials</a></li>
+                            <li><a href="#contact">Support</a></li>
                         </ul>
                     </div>
                 </div>
@@ -248,9 +246,9 @@
                 <h1 class="animated hiding" data-animation="bounceInDown" data-delay="0">Get the Scout Student Card <span class="highlight">Today</span>!</h1>
                 <p class="animated hiding sub-headline" data-animation="fadeInDown" data-delay="500">Discounts at all your favourite businesses</p>
                 <div class="sub-headline home-btn-div">
-                    <a class="btn home-btn" id="buy-card-btn"> Buy Card </a>
-                    <a class="btn home-btn" id="business-list-btn"> Business List </a>
-                    <a class="btn home-btn" id="feedback-btn"> Feedback </a>
+                    <a class="btn home-btn" id="buy-card-btn" href="/getcard.php"> Buy Card </a>
+                    <a class="btn home-btn" id="business-list-btn" href="/businesses.php"> Business List </a>
+                    <a class="btn home-btn" id="feedback-btn" href="/contact.php"> Feedback </a>
                 </div>
             </div>
         </div>
@@ -307,7 +305,7 @@
                     <div class="col-sm-6 animated hiding" data-animation="fadeInLeft">
     					<br/><br/>
                         <article>
-                            <h3>Get the  <span class="highlight">Card</span></h3>
+                            <h3>GET THE  <span class="highlight">CARD</span></h3>
                             <p>Buy the card online or from one of our participating retailers around the city. For updates and info, follow us on Facebook or Twitter!</p>
                         </article>
                     </div>
@@ -429,44 +427,6 @@
     		</div>
     	</section>
 
-        <section id="your-feedback" class="">
-            <div class="section-header animated hiding text-left col-md-10 col-md-offset-1 your-feedback-container" data-animation="fadeInDown">
-                <h2 class="text-center">_your <span class="highlight">feedback</span></h2>
-                <div class="col-md-10 col-md-offset-1">
-                    <form action="" id="fb-form">
-                        <p style="overflow: hidden;">
-                            <input type="text" name="fb_name" class="fb-text col-md-5" placeholder="Your name" />
-                            <input type="text" name="fb_contact" class="fb-text col-md-5 col-md-offset-1" placeholder="Email or Phone" />
-                        </p>
-                        <p style="overflow: hidden;">
-                            I need to be contacted.
-                        </p>
-
-                        <h5><u>Did something go wrong?</u></h5>
-                        <p>Let us know so we can work to fix it</p>
-                        <textarea name="fb_textarea_one" class="fb-textarea" placeholder="Describe problem"></textarea> <br />
-                        <br />
-                        <p style="overflow: hidden;">
-                            <input type="text" name="fb_date" class="fb-text col-md-5" placeholder="Date (MM-DD-YYYY)" />
-                            <input type="text" name="fb_location" class="fb-text col-md-5 col-md-offset-1" placeholder="Location (if applicable)" />
-                        </p>
-
-                        <hr />
-
-                        <h5><u>Did something go right?</u></h5>
-                        <p>Is there a business you would like to see next year?</p>
-                        <textarea name="fb_textarea_two" class="fb-textarea" placeholder="Your feedback is important to us!"></textarea>
-                        <br />
-                        <br />
-                        <button id="fb-submit-btn" class="btn btn-lg btn-primary"> Submit </button>
-                        <div id="fb-response">
-                        </div>
-                    </form>
-                </div>
-            </div>
-            
-        </section>
-
     	<section id="businesses" class="section dark" style="background-color: #f0f0f0; padding-top:30px !important; padding-bottom: 60px !important;">
             <div class="container animated hiding" data-animation="fadeInDown">
                 <span class="business-title"><h3> Our Partners </h3></span>
@@ -521,79 +481,6 @@
             </div>
         </section>
 
-        <section id="get-card" class="">
-            <div class="container">
-                <div class="hidden">
-                    <form action="php/charge.php" method="POST" id="get-card-form">
-                        <input type="hidden" name="customer_email" id="customer-email" />
-                        <input type="hidden" name="total_dollars" id="total-dollars" />
-                    </form>
-                </div>
-
-                <div class="section-header animated hiding" data-animation="fadeInDown" style="margin-bottom: 40px;">
-                    <h2>GET THE <span class="highlight">CARD</span></h2>
-                </div>
-
-                <div id="get-card-form">
-                    <div id="get-card-online">
-                        <h2 >_Online</h2>
-                        <h3> 
-                        I  want  :  <select id="quantity-select">
-                                        <option> 1 </option>
-                                        <option> 2 </option>
-                                        <option> 3 </option>
-                                        <option> 4 </option>
-                                        <option> 5 </option>
-                                        <option> 10 </option>
-                                    </select>  card(s)  today.
-                        <span id="get-card-online-submit"><u><a id="get-card-checkout-btn"> Submit </a></u></span>
-                        </h3>
-                        <div id="get-card-response" class="text-center" style="color: rgb(0, 129, 255);">
-                         
-                        </div>
-                    </div>
-                    <div id="get-card-offline">
-                        <h2>_Offline</h2>
-
-                        <div class="offline-text-container">
-                            <h4><u>Universitites / Colleges</u></h4>
-                            <h5>MacEwan University </h5>
-                            <p>
-                                SAM Center and SAMU Offices
-                            </p>
-
-                            <h4><u>Businesses</u></h4>
-                            <h5>University of Alberta Area</h5>
-                            <p>
-                                Beez: Hub Mall <br />
-                                The Green House Salad: 8623 112 St NW, Edmonton, AB <br />
-                                T6G 2H1. Behind Good Earth
-                            </p>
-
-                            <h5>Downtown</h5>
-                            <p>
-                                Dragon FX: Kingsway Mall <br />
-                                The Green House Salad: 10119 101 St NW, Edmonton, AB <br />
-                                T5J 1V9
-                            </p>
-
-                            <h5>West Side</h5>
-                            <p>
-                                Dragon FX: West Edmonton Mall
-                            </p>
-
-                            <h5>South Side</h5>
-                            <p>
-                                Dragon FX: Millwoods Town Center <br />
-                                Table Top Cafe: 5716 75 St NW, Edmonton, AB <br />
-                                T6E 5X6
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
         <footer id="contact" class="footer light">
             <div class="container">
                 <div class="footer-content row">
@@ -604,8 +491,6 @@
                         <p>
                         Scout is a marketing platform designed to help businesses acquire new customers and engage their existing customers.
                         </p>
-                        <p><strong>Shop Local. Get Rewarded.</strong></p>
-                        <p><a href="terms-of-use.html" id="tof-link"> Terms of Use </a></p>
                     </div>
                     <div class="col-sm-5 social-wrap">
                         <div class="footer-title">Social Networks</div>
@@ -636,7 +521,7 @@
                     </div>
                 </div>
             </div>
-            <div class="copyright">1812451 Alberta Ltd. All Rights Reserved.</div>
+            <div class="copyright">1812451 Alberta Ltd. All Rights Reserved. <a href="terms-of-use.html" id="tof-link"> Terms of Use </a></div>
         </footer>
 
         <div class="back-to-top"><i class="fa fa-angle-up fa-3x"></i></div>
@@ -834,7 +719,7 @@
                 };
 
                 StripeCheckout.open({
-                    key:         'pk_test_WrsERm79wYCRYqd8sPGc4Wei',
+                    key:         'pk_live_WKvcF0LgKCPDmWHBFCzrOOo4',
                     address:     true,
                     amount:      total_cents,
                     currency:    'cad',
