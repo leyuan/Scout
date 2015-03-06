@@ -234,6 +234,9 @@
                             <li><a href="#whyus">Why US</a></li>
                             <li><a href="#mobile">Mobile</a></li>
                             <li><a href="#feedback">Testimonials</a></li>
+<!--                            <li><a href="/getcard.php">Get Card</a>-->
+<!--                            <li><a href="/businesses.php">Businesses</a></li>-->
+<!--                            <li><a href="/contact.php">Feedback</a></li>-->
                             <li><a href="#contact">Support</a></li>
                         </ul>
                     </div>
@@ -427,61 +430,6 @@
     		</div>
     	</section>
 
-    	<section id="businesses" class="section dark" style="background-color: #f0f0f0; padding-top:30px !important; padding-bottom: 60px !important;">
-            <div class="container animated hiding" data-animation="fadeInDown">
-                <span class="business-title"><h3> Our Partners </h3></span>
-                <div class="business-list-logos">
-
-                    <a class="filter business-logo business-logo-all logo-cat-selected" data-filter="all"> All </a>
-                    <a class="filter business-logo " data-filter=".Eateries"> Eateries </a>
-                    <a class="filter business-logo" data-filter=".Cafes"> Cafes </a>
-                    <a class="filter business-logo" data-filter=".Bars_Clubs_Lounges"> Bars, Clubs <span class="amp">&amp;</span> Lounges </a>
-                    <a class="filter business-logo" data-filter=".Lifestyle"> Lifestyle </a>
-                    <br />
-                    <a class="filter business-logo" data-filter=".Health_Fitness"> Health <span class="amp">&amp;</span> Fitness </a>
-                    <a class="filter business-logo" data-filter=".Fashion"> Fashion </a>
-                    <a class="filter business-logo" data-filter=".Beauty_Spas"> Beauty <span class="amp">&amp;</span> Spas </a>
-                    <a class="filter business-logo" data-filter=".Entertainment"> Entertainment </a>
-
-
-
-                    <div id="Container">
-                        <?php
-                        /**
-                         * Iterate through the specified folder, and show images with filter
-                         */
-                        $businesses_logo_dir = "assets/img/logos/businesses/";
-                        $dir = getcwd()."/assets/img/logos/businesses/";
-                        $it = new RecursiveIteratorIterator(new RecursiveDirectoryIterator($dir));
-
-                        while($it->valid()) {
-
-                            if (!$it->isDot()) {
-
-                                $subject = $it->getSubPathName();
-                                // Mac OS automatically creates .DS_store file to store metadata
-                                // The following regex is used to ignore those files
-                                $pattern = '/\\.DS/';
-                                preg_match( $pattern, $subject, $match );
-                                if( !$match ) {
-                                    $file_path_name = str_replace("\\", "/", $subject);
-                                ?>
-                                    <div class="mix <?php echo $it->getSubPath(); ?> col-md-3 ">
-                                        <img src="<?php echo $businesses_logo_dir.$file_path_name;?>" alt="<?php echo $file_path_name;?>" class="business-logo-img"/>
-                                    </div>
-                                    
-                                <?php
-                                }
-                            }
-
-                            $it->next();
-                        }
-                        ?>
-                    </div>
-                </div>
-            </div>
-        </section>
-
         <footer id="contact" class="footer light">
             <div class="container">
                 <div class="footer-content row">
@@ -635,7 +583,7 @@
             $("#buster-pizza-img").click(function(){
                 $("#overlay").show();
                 $("#buster-pizza-popup").show();
-            })
+            });
 
             var sourceSwap = function() {
                 var $this = $(this);

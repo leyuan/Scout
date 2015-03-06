@@ -228,16 +228,15 @@
                     <span class="icon-bar"></span>
                 </button>
             </div>
-<!--            <div class="navigation-navbar">-->
-<!--                <ul class="navigation-bar navigation-bar-left">-->
-<!--                    <li class="active"><a href="#hero">Home</a></li>-->
-<!--                    <li><a href="#whyus">Why US</a></li>-->
-<!--                    <li><a href="#mobile">Mobile</a></li>-->
-<!--                    <li><a href="#feedback">Testimonials</a></li>-->
-<!--                    <li><a href="#businesses">Businesses</a></li>-->
-<!--                    <li><a href="#contact">Support</a></li>-->
-<!--                </ul>-->
-<!--            </div>-->
+            <div class="navigation-navbar">
+                <ul class="navigation-bar navigation-bar-left">
+                    <li class="active"><a href="#hero">Home</a></li>
+                    <li><a href="/getcard.php">Get Card</a>
+                    <li><a href="#businesses">Businesses</a></li>
+                    <li><a href="/contact.php">Feedback</a></li>
+                    <li><a href="#contact">Support</a></li>
+                </ul>
+            </div>
         </div>
     </nav>
 </header>
@@ -254,7 +253,20 @@
     </div>
 </div>
 
-<hr class="no-margin" />
+<a id="showHere"></a>
+<div id="clients">
+    <div class="container">
+        <ul class="list-inline logos">
+            <li class="logo-img-container"><img class="animated hiding logo-img support-1" id="ehub-logo-img" data-animation="fadeInUp" data-delay="0" src="assets/img/logos/ehub1.png" data-alt-src="assets/img/logos/ehub2.png" alt="ehub" /></li>
+            <li class="logo-img-container"><img class="animated hiding logo-img support-2" id="lbw-logo-img" data-animation="fadeInUp" data-delay="200" src="assets/img/logos/lbw1.png" data-alt-src="assets/img/logos/lbw2.png" alt="LBWTravel" /></li>
+            <li class="logo-img-container"><img class="animated hiding logo-img support-3" id="hot107-logo-img" data-animation="fadeInUp" data-delay="400" src="assets/img/logos/hot1071.png" data-alt-src="assets/img/logos/hot1072.png" alt="Hot-107" /></li>
+            <li class="logo-img-container"><img class="animated hiding logo-img support-4" id="buster-pizza-img" data-animation="fadeInUp" data-delay="600" src="assets/img/logos/busters1.png" data-alt-src="assets/img/logos/busters2.png" alt="Buster's Pizza" /></li>
+            <li class="logo-img-container"><img class="animated hiding logo-img support-5" id="yelp-logo-img" data-animation="fadeInUp" data-delay="800" src="assets/img/logos/yelp1.png" data-alt-src="assets/img/logos/yelp2.png" alt="Yelp" /></li>
+            <li class="logo-img-container"><img class="animated hiding logo-img support-6" id="startup-logo-img" data-animation="fadeInUp" data-delay="1000" src="assets/img/logos/startup1.png" data-alt-src="assets/img/logos/startup2.png" alt="Startup-Edmonton" /></li>
+        </ul>
+    </div>
+</div>
+<!--<hr class="no-margin" />-->
 
 <section id="businesses" class="section dark" style="background-color: #f0f0f0; padding-top:30px !important; padding-bottom: 60px !important;">
     <div class="container animated hiding" data-animation="fadeInDown">
@@ -457,14 +469,14 @@
         $("#buster-pizza-img").click(function(){
             $("#overlay").show();
             $("#buster-pizza-popup").show();
-        })
+        });
 
         var sourceSwap = function() {
             var $this = $(this);
             var newSource = $this.data('alt-src');
             $this.data('alt-src', $this.attr('src'));
             $this.attr('src', newSource);
-        }
+        };
 
         $(function() {
             $('img[data-alt-src]').each(function(){
