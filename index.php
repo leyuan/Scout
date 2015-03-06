@@ -464,9 +464,10 @@
                                 $pattern = '/\\.DS/';
                                 preg_match( $pattern, $subject, $match );
                                 if( !$match ) {
+                                    $file_path_name = str_replace("\\", "/", $subject);
                                 ?>
                                     <div class="mix <?php echo $it->getSubPath(); ?> col-md-3 ">
-                                        <img src=" <?php echo $businesses_logo_dir.$it->getSubPathName(); ?> " alt=" <?php echo $it->getSubPathName(); ?>" class="business-logo-img"/>
+                                        <img src="<?php echo $businesses_logo_dir.$file_path_name;?>" alt="<?php echo $file_path_name;?>" class="business-logo-img"/>
                                     </div>
                                     
                                 <?php
